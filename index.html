@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JoSAA Analysis Portal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to JoSAA Analysis Portal</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="analysis.html">Data Extracted</a></li>
+            <li onclick="abtsec()">About</li>
+        </ul>
+    </nav>
+
+    <div class="main" id="main1">
+        <ul style="list-style-type: disc;">
+            <div class="sec1">
+                <li><h2>About JOSAA Analysis Portal</h2></li>
+                <p>This portal provides insights and analysis of JOSAA data.</p>
+            </div>
+            <div class="sec2">
+                <li><h2>Seat Matrix 2023</h2></li>
+                <p>The seat matrix of Indian Institutes of Technology (IITs) for the year 2023 is represented in the pie chart below. 
+                   The chart illustrates the distribution of seats among the different IITs based on their respective seat capacities.
+                   The pie chart provides a visual representation of the number of seats available in each IIT. 
+                   Each slice of the pie corresponds to a specific IIT, and the size of the slice indicates the proportionate number 
+                   of seats allocated to that particular institution.
+                   The chart reveals the variations in seat capacities across the IITs. Some IITs have a larger number of seats, 
+                   while others have a relatively smaller number. This distribution reflects the different admission capacities and 
+                   focus areas of the individual IITs.
+                   Please refer to the chart to get an overview of the seat matrix of IITs in the given year.
+                </p>
+                <div style="height: 625px; width: 625px; margin: 0px;">
+                    <canvas id="myChart" aria-label="chart" role="img"></canvas>
+                </div>
+            </div>
+            <div>
+                <li><h2><u>NIRF Ranking 2023</u></h2></li>
+                <p>The National Institutional Ranking Framework (NIRF) is an initiative by the Ministry of Education, 
+                    Government of India, to rank higher education institutions in the country. 
+                    The NIRF rankings are based on various parameters such as teaching, learning, research, perception, and outreach.
+
+                    The table below showcases the NIRF rankings of Indian Institutes of Technology (IITs) in the year 2023. 
+                    These rankings reflect the overall performance and excellence of each institution in the field of technical 
+                    education and research.
+                </p>
+                <div class="sec3">
+                    <table>
+                        <tr>
+                            <th>NIRF Rank</th>
+                            <th>Institute Name</th>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>Indian Institute of Technology Madras</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>Indian Institute of Technology Delhi</td>
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>Indian Institute of Technology Bombay</td>
+                          </tr>
+                          <tr>
+                            <td>4</td>
+                            <td>Indian Institute of Technology Kanpur</td>
+                          </tr>
+                          <tr>
+                            <td>5</td>
+                            <td>Indian Institute of Technology Roorkee</td>
+                          </tr>
+                          <tr>
+                            <td>6</td>
+                            <td>Indian Institute of Technology Kharagpur</td>
+                          </tr>
+                          <tr>
+                            <td>7</td>
+                            <td>Indian Institute of Technology Guwahati</td>
+                          </tr>
+                          <tr>
+                            <td>8</td>
+                            <td>Indian Institute of Technology Hyderabad</td>
+                          </tr>
+                          <tr>
+                            <td>14</td>
+                            <td>Indian Institute of Technology Indore</td>
+                          </tr>
+                          <tr>
+                            <td>15</td>
+                            <td>Indian Institute of Technology (BHU) Varanasi</td>
+                          </tr>
+                          <tr>
+                            <td>17</td>
+                            <td>Indian Institute of Technology Dhanbad (ISM Dhanbad)</td>
+                          </tr>
+                          <tr>
+                            <td>18</td>
+                            <td>Indian Institute of Technology Gandhinagar</td>
+                          </tr>
+                          <tr>
+                            <td>22</td>
+                            <td>Indian Institute of Technology Ropar</td>
+                          </tr>
+                          <tr>
+                            <td>30</td>
+                            <td>Indian Institute of Technology Jodhpur</td>
+                          </tr>
+                          <tr>
+                            <td>33</td>
+                            <td>Indian Institute of Technology Mandi</td>
+                          </tr>
+                          <tr>
+                            <td>41</td>
+                            <td>Indian Institute of Technology Patna</td>
+                          </tr>
+                          <tr>
+                            <td>47</td>
+                            <td>Indian Institute of Technology Bhubaneswar</td>
+                          </tr>
+                          <tr>
+                            <td>59</td>
+                            <td>Indian Institute of Technology Tirupati</td>
+                          </tr>
+                          <tr>
+                            <td>67</td>
+                            <td>Indian Institute of Technology Jammu</td>
+                          </tr>
+                          <tr>
+                            <td>69</td>
+                            <td>Indian Institute of Technology Palakkad</td>
+                          </tr>
+                          <tr>
+                            <td>81</td>
+                            <td>Indian Institute of Technology Bhilai</td>
+                          </tr>
+                          <tr>
+                            <td>93</td>
+                            <td>Indian Institute of Technology Dharwad</td>
+                          </tr>
+                          <tr>
+                            <td>--</td>
+                            <td>Indian Institute of Technology Goa</td>
+                          </tr>
+                    </table>
+                </div>
+            </div>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; JOSAA Analysis Portal. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="custom.js"></script>
+    <script type="text/javascript">
+        function abtsec() {
+            document.getElementById("main1").innerHTML = "<h1>About</h1><p>Welcome to the JoSAA Analysis Portal, your go-to platform for insights and analysis of JoSAA (Joint Seat Allocation Authority) data. Our portal provides a comprehensive overview of the seat allocation and admission process for Indian Institutes of Technology (IITs) and other participating engineering institutions. At the JoSAA Analysis Portal, we understand the importance of making informed decisions when it comes to choosing an engineering college. We believe that data-driven analysis can greatly assist aspiring students in their pursuit of higher education. With that in mind, our portal offers a range of features and tools to help you make well-informed choices. One of the key features of our portal is the Seat Matrix Analysis. We provide detailed visualizations and insights into the seat allocation process of IITs, showcasing the distribution of seats among different institutes and programs. Our interactive charts and graphs give you a clear understanding of the seat capacities and variations across various IITs, enabling you to assess the availability and competition for different branches of engineering. In addition to the Seat Matrix Analysis, we also offer the NIRF (National Institutional Ranking Framework) Rankings for IITs. The NIRF rankings are based on comprehensive parameters such as teaching, learning, research, perception, and outreach. Our portal presents the latest NIRF rankings, providing you with an overview of the overall performance and excellence of each institution in the field of technical education and research. This information can be invaluable in making informed decisions about your choice of institute. We aim to empower you with data-driven insights and analysis, allowing you to navigate the complex world of engineering admissions with confidence. Whether you are a student seeking admission, a parent or guardian supporting the decision-making process, or an education professional looking for valuable information, the JoSAA Analysis Portal is here to assist you every step of the way. Explore our portal, delve into the data, and uncover valuable information that can help shape your academic journey. We strive to provide you with accurate, up-to-date, and user-friendly analysis, ensuring that you have the knowledge and tools necessary to make the best decisions for your future. Join us on this exciting exploration of JoSAA data and embark on a successful academic career with the right information at your fingertips.</p>"; 
+
+        }
+    </script>
+</body>
+</html>
